@@ -19,3 +19,42 @@ html {
   font-size: 32px;
   color: darkblue;
 }
+
+.buttons-section {
+  margin-top: 40px;
+}
+
+.buttons-section__legend {
+  display: flex;
+}
+
+.exclamation-image {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.buttons-section__message {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.button {
+  height: 67px;
+  width: 328px;
+  border-radius: 25px;
+  border: 1px solid #0e2f58;
+}
+
+.button__encrypt {
+  color: #fff;
+  background-color: #0e2f58;
+  margin-right: 24px;
+}
+
+.button__decrypt {
+  color: #0e2f58;
+  background-color: #d8dfe8;
+  margin-right: 24px;
+}
