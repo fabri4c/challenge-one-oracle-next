@@ -9,3 +9,13 @@ html {
 .logo {
   margin-top: 40px;
 }
+
+.main-section {
+  margin-top: 40px;
+  margin-left: 168px;
+}
+
+.main-section__message {
+  font-size: 32px;
+  color: darkblue;
+}
