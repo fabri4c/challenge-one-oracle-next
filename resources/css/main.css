@@ -1,1 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  background-color: #e5e5e5;
+}
+
+.logo {
+  margin-top: 40px;
+}
