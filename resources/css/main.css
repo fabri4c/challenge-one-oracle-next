@@ -4,6 +4,7 @@
 
 html {
   background-color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
 }
 
 .logo {
@@ -57,4 +58,36 @@ html {
   color: #0e2f58;
   background-color: #d8dfe8;
   margin-right: 24px;
+}
+
+.aside-section {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  height: 944px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.aside-section__image {
+  margin-top: 150px;
+}
+
+.aside-section__text-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.aside-section__text--normal {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aside-section__text--small {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
 }
