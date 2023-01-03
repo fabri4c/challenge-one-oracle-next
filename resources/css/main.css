@@ -20,7 +20,10 @@ html {
 
 .main-section__message {
   font-size: 32px;
-  color: darkblue;
+  color: #0e2f58;
+  background-color: #e5e5e5;
+  border: none;
+  outline: none;
 }
 
 .buttons-section {
