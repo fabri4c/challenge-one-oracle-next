@@ -1,1 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 200px 20px;
+  grid-auto-flow: row;
+}
+
+.main-section__message-container {
+  margin-top: 40px;
+  margin-left: 150px;
+  height: 450px;
+}
+
+.main-section__message {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  color: #0e2f58;
+  background-color: #e5e5e5;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.buttons-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.buttons-section__legend {
+  display: flex;
+}
+
+.exclamation-image {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.buttons-section__message {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.button {
+  display: inline-block;
+  height: 67px;
+  width: 42%;
+  max-width: 328px;
+   border: 1px solid #0e2f58;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button:hover {
+   border-color: rgba(255, 255, 255, 1);
+}
+
+.button__encrypt {
+  color: #fff;
+  background-color: #0e2f58;
+  margin-right: 24px;
+}
+
+.button__decrypt {
+  color: #0e2f58;
+  background-color: #d8dfe8;
+  margin-right: 24px;
+}
+
+.aside-section {
+  height: 694px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.aside-section__image {
+  margin-top: 150px;
+}
+
+.aside-section__text-container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.aside-section__text--normal {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aside-section__text--small {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+
+  .main-section__message-container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .main-section__message {
+    font-size: 24px;
+  }
+
+  .buttons-section {
+    margin-left: 15px;
+  }
+
+  .button {
+    max-width: none;
+  }
+
+  .aside-section {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .aside-section__image {
+    display: none;
+  }
+
+  .aside-section__text-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .buttons-section {
+    margin-left: 0;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .aside-section {
+    margin-top: 80px;
+  }
+}
