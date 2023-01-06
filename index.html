@@ -8,7 +8,11 @@
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="resources/css/reset.css" />
     <link rel="stylesheet" href="resources/css/main.css" />
-    <script defer src="resources/js/index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer type="text/javascript" src="resources/js/index.js"></script>
   </head>
 
   <body>
@@ -20,7 +24,8 @@
         <textarea
           class="main-section__message"
           name="message"
-          id="messagge"></textarea>
+          id="input-message"
+          onfocus="this.value=''"></textarea>
         <div class="buttons-section">
           <div class="buttons-section__legend">
             <img
@@ -32,12 +37,12 @@
             </p>
           </div>
           <div class="buttons-section__container"></div>
-          <button class="button button__encrypt">Encriptar</button>
-          <button class="button button__decrypt">Desencriptar</button>
+          <button id="encrypt-button" class="button button__encrypt">Encriptar</button>
+          <button id="decrypt-button" class="button button__decrypt">Desencriptar</button>
         </div>
       </div>
       <aside class="aside-section">
-        <div class="aside-section__container">
+        <div class="aside-section__container" id="output-message">
           <img
             class="aside-section__image"
             src="resources/images/Muñeco.png"
