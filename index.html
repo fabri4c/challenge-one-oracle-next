@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <link rel="stylesheet" href="resources/css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer type="text/javascript" src="resources/js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="resources/images/Logo.png" alt="Allura Logo">
+    </div>
+    <main class="main-section">
+      <div class="main-section__message-container">
+        <textarea
+          class="main-section__message"
+          name="message"
+          id="input-textarea"
+          onfocus="this.value=''"></textarea>
+        <div class="buttons-section">
+          <div class="buttons-section__legend">
+            <img
+              class="exclamation-image"
+              src="resources/images/bi_exclamation-circle-fill.png"
+              alt="importante" />
+            <p class="buttons-section__message">
+              Solo letras minúsculas y sin acentos
+            </p>
+          </div>
+          <div class="buttons-section__container"></div>
+          <button id="encrypt-button" class="button button__encrypt">Encriptar</button>
+          <button id="decrypt-button" class="button button__decrypt">Desencriptar</button>
+        </div>
+      </div>
+      <aside class="aside-section">
+        <div class="aside-section__container" id="aside-section__container">
+          <img
+            class="aside-section__image"
+            src="resources/images/Muñeco.png"
+            alt="Joven mirando una gema"
+            />
+          <div class="aside-section__text-container"
+            id="output-textarea-container">
+            <p class="aside-section__notice">Ningún mensaje fue
+              encontrado</p>
+            <textarea
+              class="aside-section__textarea"
+              name="message"
+              id="output-textarea"
+              onclick="removeImgAndPElements()"
+              onfocus="this.value=''"></textarea>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

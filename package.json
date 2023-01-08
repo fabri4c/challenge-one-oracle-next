@@ -1,0 +1,22 @@
+{
+  "name": "challenge-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "AES",
+    "crypto-js",
+    "challenge ONE"
+  ],
+  "author": "Fabrizio Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "http-server": "^14.1.1"
+  }
+}
