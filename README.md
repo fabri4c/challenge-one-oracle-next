@@ -31,7 +31,7 @@ Para instalar las dependencias necesarias, ejecuta el siguiente comando:
 
 ## Uso
 
-Para probar la aplicación da clic [aquí](https://fabgrel10.github.io/fabgrel10-challenge-one-oracle-next/) o ejecuta un servidor localmente desde tu terminal con pnpm http-server
+Para probar la aplicación da clic [aquí](https://fabgrel10.github.io/challenge-one-oracle-next/) o ejecuta un servidor localmente desde tu terminal ejecutando `pnpm http-server`.
 
 ## Contáctame
 
