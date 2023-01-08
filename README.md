@@ -16,7 +16,7 @@
   - [Descripción](#descripción)
   - [Tabla de Contenidos](#tabla-de-contenidos)
   - [Instalación](#instalación)
-  - [Usage](#usage)
+  - [Uso](#uso)
   - [Contáctame](#contáctame)
   - [Pruebas](#pruebas)
   - [Licencia](#licencia)
@@ -25,13 +25,13 @@
 
 ## Instalación
 
-To install necessary dependencies, run the following command:
+Para instalar las dependencias necesarias, ejecuta el siguiente comando:
 
-`pnpm install` or `npm install`
+`pnpm install` o `npm install`
 
-## Usage
+## Uso
 
-To try the app head to ... or run a server locally from your terminal with `pnpm http-server`
+Para probar la aplicación da clic [aquí](https://fabgrel10.github.io/fabgrel10-challenge-one-oracle-next/) o ejecuta un servidor localmente desde tu terminal con pnpm http-server
 
 ## Contáctame
 
@@ -47,7 +47,7 @@ Aún no se han implementado pruebas para este proyecto.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la licencia ISC.
+Este proyecto está licenciado bajo la [unilicencia](https://unlicense.org), puedes usarlo sin restricciones.
 
 ## Contribuciones
 
