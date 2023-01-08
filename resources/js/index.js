@@ -8,12 +8,14 @@ const outputTextarea = document.getElementById('output-textarea');
 const key = 'my secret key';
 const encryptBtn = document.getElementById('encrypt-button');
 const decryptBtn = document.getElementById('decrypt-button');
+const copyBtn = document.getElementById('copy-button');
 
 inputTextarea.value = 'ingrese el texto aquí';
 outputTextarea.value = 'Ingresa el texto que desees encriptar o desencriptar.';
 
 encryptBtn.addEventListener('click', encryptMessage);
 decryptBtn.addEventListener('click', decryptMessage);
+copyBtn.addEventListener('click', copyToClipboard);
 
 function encryptMessage() {
   const message = inputTextarea.value;
@@ -32,6 +34,17 @@ function decryptMessage() {
   );
   inputTextarea.value = decryptedMessage;
   outputTextarea.value = '';
+}
+
+function copyToClipboard() {
+  navigator.clipboard.writeText(outputTextarea.value).then(
+    function () {
+      console.log('Text copied to clipboard');
+    },
+    function (err) {
+      console.error('Could not copy text: ', err);
+    }
+  );
 }
 
 function removeImgAndPElements() {
