@@ -24,7 +24,7 @@
         <textarea
           class="main-section__message"
           name="message"
-          id="input-message"
+          id="input-textarea"
           onfocus="this.value=''"></textarea>
         <div class="buttons-section">
           <div class="buttons-section__legend">
@@ -42,16 +42,22 @@
         </div>
       </div>
       <aside class="aside-section">
-        <div class="aside-section__container" id="output-message">
+        <div class="aside-section__container" id="aside-section__container">
           <img
             class="aside-section__image"
             src="resources/images/Muñeco.png"
-            alt="Joven mirando una gema" />
-          <div class="aside-section__text-container">
-            <p class="aside-section__text--normal">Ningún mensaje fue
+            alt="Joven mirando una gema"
+            />
+          <div class="aside-section__text-container"
+            id="output-textarea-container">
+            <p class="aside-section__notice">Ningún mensaje fue
               encontrado</p>
-            <p class="aside-section__text--small">Ingresa el texto que desees
-              encriptar o desencriptar.</p>
+            <textarea
+              class="aside-section__textarea"
+              name="message"
+              id="output-textarea"
+              onclick="removeImgAndPElements()"
+              onfocus="this.value=''"></textarea>
           </div>
         </div>
       </aside>
