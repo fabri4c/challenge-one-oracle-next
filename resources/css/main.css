@@ -100,17 +100,22 @@ html {
 .aside-section__text-container {
   max-width: 75%;
   margin: 0 auto;
+  height: 680px;
 }
 
-.aside-section__text--normal {
+.aside-section__notice {
   font-size: 24px;
   font-weight: 700;
 }
 
-.aside-section__text--small {
+.aside-section__textarea {
+  border: none;
+  outline: none;
+  resize: none;
   margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
+  max-width: 249px;
 }
 
 @media (max-width: 768px) {
@@ -146,6 +151,12 @@ html {
 
   .aside-section__text-container {
     margin-top: 50px;
+    max-width: 100%;
+  }
+
+  .aside-section__textarea {
+    width: 90%;
+    max-width: none;
   }
 }
 
